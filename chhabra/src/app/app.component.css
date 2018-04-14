@@ -1,0 +1,14 @@
+.header-nightsky .navbar-nav>li>a {
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.appStyle {
+    margin-top: 2%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 610px;
+    margin-left: 0px;
+    margin-right: -15px;
+}
