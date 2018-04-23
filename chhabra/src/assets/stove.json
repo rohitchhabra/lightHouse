@@ -1,0 +1,214 @@
+[{
+        "name": "Stove1",
+        "Description": "This is Stove 1",
+        "image": "../../assets/images/stoves/stove1.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove2",
+        "Description": "This is Stove 2",
+        "image": "../../assets/images/stoves/stove2.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove3",
+        "Description": "This is Stove 3",
+        "image": "../../assets/images/stoves/stove3.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 4",
+        "image": "../../assets/images/stoves/stove4.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 5",
+        "image": "../../assets/images/stoves/stove21.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove1",
+        "Description": "This is Stove 6",
+        "image": "../../assets/images/stoves/stove22.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove2",
+        "Description": "This is Stove 7",
+        "image": "../../assets/images/stoves/stove23.jpg",
+        "price": "100"
+    },
+
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 8",
+        "image": "../../assets/images/stoves/stove24.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 9",
+        "image": "../../assets/images/stoves/stove25.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 10",
+        "image": "../../assets/images/stoves/stove31.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 11",
+        "image": "../../assets/images/stoves/stove31-1.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 12",
+        "image": "../../assets/images/stoves/stove32.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 13",
+        "image": "../../assets/images/stoves/stove33.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove1",
+        "Description": "This is Stove 14",
+        "image": "../../assets/images/stoves/stove34.png",
+        "price": "100"
+    },
+    {
+        "name": "Stove2",
+        "Description": "This is Stove 15",
+        "image": "../../assets/images/stoves/stove35.jpg",
+        "price": "100"
+    },
+
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 16",
+        "image": "../../assets/images/stoves/stove36.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 17",
+        "image": "../../assets/images/stoves/stove37.png",
+        "price": "100"
+    },
+    {
+        "name": "Stove1",
+        "Description": "This is Stove 18",
+        "image": "../../assets/images/stoves/stove38.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove2",
+        "Description": "This is Stove 19",
+        "image": "../../assets/images/stoves/stove39.jpg",
+        "price": "100"
+    },
+
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 20",
+        "image": "../../assets/images/stoves/stove40.jpeg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 21",
+        "image": "../../assets/images/stoves/stove41.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 22",
+        "image": "../../assets/images/stoves/stove42.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 23",
+        "image": "../../assets/images/stoves/stove43.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 24",
+        "image": "../../assets/images/stoves/stove44.jpeg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 25",
+        "image": "../../assets/images/stoves/stove45.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 26",
+        "image": "../../assets/images/stoves/stove46.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 27",
+        "image": "../../assets/images/stoves/stove51.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 28",
+        "image": "../../assets/images/stoves/stove52.jpeg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 29",
+        "image": "../../assets/images/stoves/stove53.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 30",
+        "image": "../../assets/images/stoves/stove54.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 31",
+        "image": "../../assets/images/stoves/stove55.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 32",
+        "image": "../../assets/images/stoves/stove56.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 33",
+        "image": "../../assets/images/stoves/stove57.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 34",
+        "image": "../../assets/images/stoves/stove61.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Stove4",
+        "Description": "This is Stove 35",
+        "image": "../../assets/images/stoves/stove62.jpg",
+        "price": "100"
+    }
+]

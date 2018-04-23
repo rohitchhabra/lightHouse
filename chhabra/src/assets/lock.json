@@ -24,130 +24,130 @@
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
+        "Description": "This is lock 5",
+        "image": "../../assets/images/locks/lock5.jpg",
         "price": "100"
     },
     {
         "name": "Lock1",
-        "Description": "This is lock 1",
-        "image": "../../assets/images/locks/lock1.jpg",
+        "Description": "This is lock 6",
+        "image": "../../assets/images/locks/lock6.jpg",
         "price": "100"
     },
     {
         "name": "Lock2",
-        "Description": "This is lock 2",
+        "Description": "This is lock 7",
+        "image": "../../assets/images/locks/lock7.jpg",
+        "price": "100"
+    },
+
+    {
+        "name": "Lock4",
+        "Description": "This is lock 8",
+        "image": "../../assets/images/locks/lock8.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock4",
+        "Description": "This is lock 9",
+        "image": "../../assets/images/locks/lock9.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock4",
+        "Description": "This is lock 10",
+        "image": "../../assets/images/locks/lock10.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock4",
+        "Description": "This is lock 11",
+        "image": "../../assets/images/locks/lock11.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock4",
+        "Description": "This is lock 12",
+        "image": "../../assets/images/locks/lock12.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock4",
+        "Description": "This is lock 13",
+        "image": "../../assets/images/locks/lock13.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock1",
+        "Description": "This is lock 14",
+        "image": "../../assets/images/locks/lock14.jpg",
+        "price": "100"
+    },
+    {
+        "name": "Lock2",
+        "Description": "This is lock 15",
         "image": "../../assets/images/locks/lock2.jpg",
         "price": "100"
     },
 
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 16",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 17",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock1",
-        "Description": "This is lock 1",
+        "Description": "This is lock 18",
         "image": "../../assets/images/locks/lock1.jpg",
         "price": "100"
     },
     {
         "name": "Lock2",
-        "Description": "This is lock 2",
+        "Description": "This is lock 19",
         "image": "../../assets/images/locks/lock2.jpg",
         "price": "100"
     },
 
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 20",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock1",
-        "Description": "This is lock 1",
-        "image": "../../assets/images/locks/lock1.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock2",
-        "Description": "This is lock 2",
-        "image": "../../assets/images/locks/lock2.jpg",
-        "price": "100"
-    },
-
-    {
-        "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 21",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 22",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 23",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 24",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     },
     {
         "name": "Lock4",
-        "Description": "This is lock 4",
-        "image": "../../assets/images/locks/lock4.jpg",
-        "price": "100"
-    },
-    {
-        "name": "Lock4",
-        "Description": "This is lock 4",
+        "Description": "This is lock 25",
         "image": "../../assets/images/locks/lock4.jpg",
         "price": "100"
     }

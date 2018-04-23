@@ -137,3 +137,11 @@ body {
         font-size: 42px;
     }
 }
+
+.hideImg {
+    display:none;
+}
+
+.showImg {
+    display:block;
+}
