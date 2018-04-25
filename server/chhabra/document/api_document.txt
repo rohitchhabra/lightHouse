@@ -1,0 +1,26 @@
+1.	Create Enquiry
+
+	URL : http://localhost:8080/enquiry 
+	method  : POST
+	Req : 
+
+		{
+					"name": "rohit",
+					"contactNumber": "1234567890",
+					"city": "asd",
+					"state": "HR",
+					"zipCode": "132039",
+					"address": "address 1 1 ",
+					"enquiryType": "gen"
+				
+		}
+
+	Res : 
+		{"errorCode":0,"errorDesc":null,"resultCode":200,"resultDesc":"Success"}
+
+2.	Fetch All enquires
+
+	URL : http://localhost:8080/getAll 
+	method : GET
+
+	RES : [{"name":"rohit","contactNumber":"1234567890","city":null,"state":null,"zipCode":null,"address":null,"enquiryType":null,"creationDate":"2018-04-25 23:46:29.0"}]
