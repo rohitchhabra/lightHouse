@@ -26,7 +26,8 @@ import { CarouselModule } from 'angular4-carousel';
     routing,
     CarouselModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
   providers: [LockService,StoveService],
   bootstrap: [AppComponent]

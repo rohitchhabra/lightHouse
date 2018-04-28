@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
 import { FormGroup, FormControl, FormBuilder, Validators }        from '@angular/forms';
 import { Http, Response,Headers } from '@angular/http';
+import {AjaxCalls} from '../utils/ajaxCalls';
+import {AppConstants} from '../utils/appConstants';
 
 declare var $:any;
 @Component({
@@ -13,6 +15,7 @@ declare var $:any;
 export class HomeComponent implements OnInit {
 
   generatorForm : FormGroup;
+  keyForm : FormGroup;
 
   constructor(private http:Http, fBuilder:FormBuilder) {
     this.generatorForm = fBuilder.group({
@@ -21,9 +24,20 @@ export class HomeComponent implements OnInit {
        city     : new FormControl('',[Validators.required]),
        state     : new FormControl('',[Validators.required]),
        address     : new FormControl('',[Validators.required]),
+       zipCode  : new FormControl('',[Validators.required]),
        contactNumber  : new FormControl('',[Validators.required])
-      
   });
+  this.keyForm = fBuilder.group({
+    /**email     : ['', Validators.compose([Validators.required, CustomValidators.emailValidator])],*/
+     fullName     : new FormControl('',[Validators.required]),
+     city     : new FormControl('',[Validators.required]),
+    // state     : new FormControl('',[Validators.required]),
+    // address     : new FormControl('',[Validators.required]),
+     zipCode  : new FormControl('',[Validators.required]),
+     contactNumber  : new FormControl('',[Validators.required]),
+     vehicleType  : new FormControl('',[Validators.required]),
+     vehicleNumber  : new FormControl('',[Validators.required])
+});
    }
 
   ngOnInit() {
@@ -60,6 +74,57 @@ public config: ICarouselConfig = {
 
 hireGenerator(){
   console.log(this.generatorForm.controls.fullName.value)
+
+    var reqjson=JSON.stringify(
+      {
+        "name": this.generatorForm.controls.fullName.value,
+        "contactNumber": this.generatorForm.controls.contactNumber.value,
+        "city": this.generatorForm.controls.city.value,
+        "state": this.generatorForm.controls.state.value,
+        "zipCode": this.generatorForm.controls.zipCode.value,
+        "address": this.generatorForm.controls.address.value,
+        "enquiryType": "gen"
+      
+      });
+
+    AjaxCalls.httpPostCall(reqjson,AppConstants.baseUrl+"/enquiry",this.http).subscribe(
+      (data:any) => {  
+        console.log(data);
+      },
+    (error:any)=>{
+      console.log("error");},	
+    ()=>console.log("finished")
+  );
+
 }
+
+keyService(){
+  console.log(this.keyForm.controls.fullName.value)
+
+    var reqjson=JSON.stringify(
+      {
+        "name": this.keyForm.controls.fullName.value,
+        "contactNumber": this.keyForm.controls.contactNumber.value,
+        "city": this.keyForm.controls.city.value,
+       // "state": this.keyForm.controls.state.value,
+        "zipCode": this.keyForm.controls.zipCode.value,
+       // "address": this.keyForm.controls.address.value,
+       "vehicleType": this.keyForm.controls.vehicleType.value,
+       "vehicleNumber": this.keyForm.controls.vehicleNumber.value,
+        "enquiryType": "keys"
+      
+      });
+
+    AjaxCalls.httpPostCall(reqjson,AppConstants.baseUrl+"/enquiry",this.http).subscribe(
+      (data:any) => {  
+        console.log(data);
+      },
+    (error:any)=>{
+      console.log("error");},	
+    ()=>console.log("finished")
+  );
+
+}
+
 
 }
