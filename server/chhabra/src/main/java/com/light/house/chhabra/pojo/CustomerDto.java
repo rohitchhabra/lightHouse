@@ -10,6 +10,8 @@ public class CustomerDto {
 	private String address;
 	private String enquiryType;
 	private String creationDate;
+	private String vehicleType;
+	private String vehicleNumber;
 	
 	public String getName() {
 		return name;
@@ -58,6 +60,18 @@ public class CustomerDto {
 	}
 	public void setCreationDate(String creationDate) {
 		this.creationDate = creationDate;
+	}
+	public String getVehicleType() {
+		return vehicleType;
+	}
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
+	}
+	public String getVehicleNumber() {
+		return vehicleNumber;
+	}
+	public void setVehicleNumber(String vehicleNumber) {
+		this.vehicleNumber = vehicleNumber;
 	}
 	
 	

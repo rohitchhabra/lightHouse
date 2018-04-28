@@ -39,6 +39,12 @@ public class Customer implements Serializable {
 	@Column(name="address")
 	private String address;
 	
+	@Column(name="vehicle_type")
+	private String vehicleType;
+	
+	@Column(name="vehicle_number")
+	private String vehicleNumber;
+	
 	@Column(name="enquiry_type")
 	private String enquiryType;
 	
@@ -98,6 +104,18 @@ public class Customer implements Serializable {
 	}
 	public void setCreationDate(Date creationDate) {
 		this.creationDate = creationDate;
+	}
+	public String getVehicleType() {
+		return vehicleType;
+	}
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
+	}
+	public String getVehicleNumber() {
+		return vehicleNumber;
+	}
+	public void setVehicleNumber(String vehicleNumber) {
+		this.vehicleNumber = vehicleNumber;
 	}
 	
 	
