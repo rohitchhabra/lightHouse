@@ -46,8 +46,8 @@ export class HomeComponent implements OnInit {
 
 
 public imageSources: string[] = [
-  '.,/../../../assets/images/logo.png',
-  '.,/../../../assets/images/logo_burned.png',
+ // '.,/../../../assets/images/logo.png',
+ // '.,/../../../assets/images/logo_burned.png',
   '../../assets/images/stoves/stove31.jpg',
   '../../assets/images/stoves/stove31-1.jpg',
   '../../assets/images/stoves/stove33.jpg',

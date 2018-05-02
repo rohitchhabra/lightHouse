@@ -11,7 +11,7 @@ import { LocksComponent } from './locks/locks.component';
 import { LockService } from "./locks/services/lock.service";
 import { StoveComponent } from './stove/stove.component';
 import { StoveService } from "./stove/services/stove.service";
-
+import {SecComponent} from "./sec/sec.component";
 import { CarouselModule } from 'angular4-carousel';
 
 @NgModule({
@@ -19,7 +19,8 @@ import { CarouselModule } from 'angular4-carousel';
     AppComponent,
     HomeComponent,
     LocksComponent,
-    StoveComponent
+    StoveComponent,
+    SecComponent
   ],
   imports: [HttpModule,
     BrowserModule,
