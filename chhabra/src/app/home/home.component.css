@@ -145,3 +145,19 @@ body {
 .showImg {
     display:block;
 }
+
+.fieldError .control-label{
+	color:#a94442;
+}
+.fieldError label{
+	color:#a94442;
+}
+
+
+.fieldError .form-control{
+		border-left:2px solid #a94442;
+	/*border-left:1px dotted red;*/
+}
+.fieldError .inputSize{
+	border-left:2px solid #a94442;
+}

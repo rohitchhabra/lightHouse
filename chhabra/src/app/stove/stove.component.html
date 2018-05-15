@@ -45,16 +45,11 @@
 <div class="col-sm-4 col-lg-4 col-md-4" *ngFor="let item of locks" style="margin-top: 3%;">
     <a title="{{item.Description}}" style="text-decoration: none;">
         <div class="thumbnail" style="box-shadow: 2px 2px 2px #888888;height:250px;">
-            <img src={{item.image}} style="    width: 55%;
-    height: 60%;
-    border: 1px solid #ddd;
-    border-radius: 4px;">
+            <img src={{item.image}} style=" width: 55%; height: 60%; border: 1px solid #ddd; border-radius: 4px;">
             <div class="caption">
-
                 <div style="max-height: 65px;white-space:pre-line;">
                     <!-- //overflow: auto; -->
                     <h4>{{item.Description}}</h4>
-
                 </div>
                 <p style="font-size: 16px;font-weight: 700;color: #212121;">Price : ₹ {{item.price}}</p>
                 <!--<a style="position: absolute;right:22px;bottom:27px;padding-bottom:0px;padding-top:0px;" class="pull-right" target="_blank" href={{item.url}}><h6>Start Demo</h6></a>-->

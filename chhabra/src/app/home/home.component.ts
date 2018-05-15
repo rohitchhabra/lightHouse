@@ -73,6 +73,9 @@ public config: ICarouselConfig = {
 };
 
 hireGenerator(){
+
+  console.log(this.generatorForm.valid);
+
   console.log(this.generatorForm.controls.fullName.value)
 
     var reqjson=JSON.stringify(
