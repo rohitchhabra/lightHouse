@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ICarouselConfig, AnimationConfig } from 'angular4-carousel';
+// import { ICarouselConfig, AnimationConfig } from 'angular4-carousel'
 import { FormGroup, FormControl, FormBuilder, Validators }        from '@angular/forms';
 import { Http, Response,Headers } from '@angular/http';
 import {AjaxCalls} from '../utils/ajaxCalls';
@@ -62,15 +62,15 @@ public imageSources: string[] = [
   
 ];
 
-public config: ICarouselConfig = {
- verifyBeforeLoad: true,
- log: false,
- animation: true,
- animationType: AnimationConfig.SLIDE,
- autoplay: true,
- autoplayDelay: 2000,
- stopAutoplayMinWidth: 768
-};
+// public config: ICarouselConfig = {
+//  verifyBeforeLoad: true,
+//  log: false,
+//  animation: true,
+//  animationType: AnimationConfig.SLIDE,
+//  autoplay: true,
+//  autoplayDelay: 2000,
+//  stopAutoplayMinWidth: 768
+// };
 
 hireGenerator(){
 
@@ -101,23 +101,23 @@ hireGenerator(){
 
 }
 
-keyService(){
+keyService(form){
   console.log(this.keyForm.controls.fullName.value)
-
+  var formValues =form.value;
     var reqjson=JSON.stringify(
       {
-        "name": this.keyForm.controls.fullName.value,
-        "contactNumber": this.keyForm.controls.contactNumber.value,
-        "city": this.keyForm.controls.city.value,
+        "name": formValues.fullName,
+        "contactNumber":  formValues.contactNumber,
+        "city":  formValues.city,
        // "state": this.keyForm.controls.state.value,
-        "zipCode": this.keyForm.controls.zipCode.value,
+        "zipCode":  formValues.zipCode,
        // "address": this.keyForm.controls.address.value,
-       "vehicleType": this.keyForm.controls.vehicleType.value,
-       "vehicleNumber": this.keyForm.controls.vehicleNumber.value,
+       "vehicleType":  formValues.vehicleType,
+       "vehicleNumber":  formValues.vehicleNumber,
         "enquiryType": "keys"
       
       });
-
+console.log(reqjson);
     AjaxCalls.httpPostCall(reqjson,AppConstants.baseUrl+"/enquiry",this.http).subscribe(
       (data:any) => {  
         console.log(data);

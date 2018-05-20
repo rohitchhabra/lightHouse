@@ -12,7 +12,7 @@ import { LockService } from "./locks/services/lock.service";
 import { StoveComponent } from './stove/stove.component';
 import { StoveService } from "./stove/services/stove.service";
 import {SecComponent} from "./sec/sec.component";
-import { CarouselModule } from 'angular4-carousel';
+// import { CarouselModule } from 'angular4-carousel';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { CarouselModule } from 'angular4-carousel';
   imports: [HttpModule,
     BrowserModule,
     routing,
-    CarouselModule,
+    // CarouselModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule

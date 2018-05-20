@@ -2,52 +2,54 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-    .slider1{
-      width: 55%;
-      height: 60%;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+    .slider1 {
+        width: 55%;
+        height: 60%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
     }
-    .slider0{
-      box-shadow: 2px 2px 2px #888888;height:250px;
+    
+    .slider0 {
+        box-shadow: 2px 2px 2px #888888;
+        height: 250px;
     }
-    </style>
+</style>
 
 <div class="hero">
     <!-- <h1>Welcome To Chhabra Light House</h1> -->
     <!-- <div class="btn btn-primary" data-target="#myModal">Hire Generator</div>
     <div class="btn btn-primary">Key Service</div> -->
-<div class="row">
-  <div class="col-sm-6" style="text-align:center;">
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#hireGeneratorModel">Hire Generator</button>
-  </div>
-  <div class="col-sm-6" style="text-align:center;">
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#keyServiceModel">Key Service</button>
-  </div>
-    
-</div>
-<br>
-<br>
+    <div class="row">
+        <div class="col-sm-6" style="text-align:center;">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#hireGeneratorModel">Hire Generator</button>
+        </div>
+        <div class="col-sm-6" style="text-align:center;">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#keyServiceModel">Key Service</button>
+        </div>
+
+    </div>
+    <br>
+    <br>
     <!-- <div class="" style="max-width:500px; margin-left: 234px;">
         <div style="width: 800px; height: 400px">
             <carousel [sources]="imageSources" [config]="config"></carousel>
           </div>    
       </div> -->
 
-     
+
 
     <div class="container">
-            <!-- <h2>Carousel Example</h2>   -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <!-- <ol class="carousel-indicators">
+        <!-- <h2>Carousel Example</h2>   -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol> -->
-          
-              <!-- Wrapper for slides -->
-              <!-- <div class="carousel-inner">
+
+            <!-- Wrapper for slides -->
+            <!-- <div class="carousel-inner">
                 <div class="item active">
                   <img src="../../assets/images/stoves/stove33.jpg" alt="Los Angeles" style="width:100%;">
                 </div>
@@ -60,8 +62,8 @@
                   <img src="../../assets/images/stoves/stove36.jpg" alt="New york" style="width:100%;">
                 </div>
               </div> -->
-          
-              
+
+
 
 
             <!-- <div class="carousel-inner" >
@@ -71,7 +73,7 @@
               <!-- <div class="item" *ngFor="let item of imageSources" >
                 <img src="{{item}}" alt="Los Angeles" class="" style="width:100%;">
               </div> -->
-              <!-- <div class=" " *ngFor="let item of imageSources" style="margin-top: 3%;">
+            <!-- <div class=" " *ngFor="let item of imageSources" style="margin-top: 3%;">
                     <div class="thumbnail" style="box-shadow: 2px 2px 2px #888888;height:2500px;">
                         <img src={{item}} style=" width: 66%; height: 100%; ">
                          
@@ -79,132 +81,148 @@
             </div> 
           </div> -->
 
-              <div class="carousel-inner" >
-                  <div class="item active ">
-                      <img src="../../assets/images/stoves/stove33.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                  <div class="item" *ngFor="let item of imageSources" >
+            <div class="carousel-inner">
+                <div class="item active ">
+                    <img src="../../assets/images/stoves/stove33.jpg" alt="Los Angeles" style="width:100%;">
+                </div>
+                <div class="item" *ngFor="let item of imageSources">
                     <img src="{{item}}" alt="Los Angeles" class="" style="width:100%;">
-                  </div>
-            
-              </div>
+                </div>
 
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-
-<!-- Modal hireGeneratorModel-->
-<div id="hireGeneratorModel" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-  
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Hire Generator</h4>
+            </a>
         </div>
-        <div class="modal-body">
-
-            <form [formGroup]="generatorForm">
-              <div class="form-group row" >
-                    <label class="col-sm-3">Full Name</label>
-                    <input type="text" class="col-sm-7" formControlName="fullName"/>
-                    <!-- <input type="hidden" class="col-sm-2" /> -->
-              </div>
-        
-              <div class="form-group row" >
-                    <label class="col-sm-3">Contact Number</label>
-                    <input type="text" class="col-sm-7"  formControlName="contactNumber"/>
-              </div>
-              <div class="form-group row" >
-                  <label class="col-sm-3">City</label>
-                  <input type="text" class="col-sm-7"  formControlName="city"/>
-               </div>
-              <div class="form-group row" >
-                <label class="col-sm-3">zipCode</label>
-                <input type="text" class="col-sm-7" formControlName="zipCode"/>
-              </div> 
-              <div class="form-group row" >
-                <label class="col-sm-3">state</label>
-                <input type="text"  class="col-sm-7" formControlName="state"/>
-              </div>
-              <div class="form-group row" >
-                <label class="col-sm-3">Address</label>
-                <input type="text" class="col-sm-7"  formControlName="address"/>
-              </div>
-            </form>
-
-          
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" (click)="hireGenerator()">Send</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-  
     </div>
-  </div>
 
-<!-- Modal keyServiceModel-->
-<div id="keyServiceModel" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-  
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Key Service</h4>
-        </div>
-        <div class="modal-body">
+    <!-- Modal hireGeneratorModel-->
+    <div id="hireGeneratorModel" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-            <form [formGroup]="keyForm">
-               
-              <div class="form-group row" >
-                    <label class="col-sm-3">Full Name</label>
-                    <input type="text" class="col-sm-7" formControlName="fullName"/>
-              </div>
-        
-              <div  class="form-group row" >
-                    <label class="col-sm-3">Contact Number</label>
-                    <input type="text" class="col-sm-7"  maxlength="10" formControlName="contactNumber"/>
-              </div>
-              <div class="form-group row" >
-                  <label class="col-sm-3">City</label>
-                  <input type="text" class="col-sm-7" formControlName="city"/>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Hire Generator</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form [formGroup]="generatorForm">
+                        <div class="form-group row">
+                            <label class="col-sm-3">Full Name</label>
+                            <input type="text" class="col-sm-7" formControlName="fullName" />
+                            <!-- <input type="hidden" class="col-sm-2" /> -->
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3">Contact Number</label>
+                            <input type="text" class="col-sm-7" formControlName="contactNumber" />
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">City</label>
+                            <input type="text" class="col-sm-7" formControlName="city" />
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">zipCode</label>
+                            <input type="text" class="col-sm-7" formControlName="zipCode" />
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">state</label>
+                            <input type="text" class="col-sm-7" formControlName="state" />
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">Address</label>
+                            <input type="text" class="col-sm-7" formControlName="address" />
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="hireGenerator()">Send</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="form-group row" >
-                <label class="col-sm-3">zipCode</label>
-                <input type="text" class="col-sm-7" formControlName="zipCode"/>
-            </div> 
-            <div class="form-group row" >
-                <label class="col-sm-3">Vehicle Type</label>
-                <input type="text" class="col-sm-7" formControlName="vehicleType"/>
-          </div>
-            <div class="form-group row" >
-                <label class="col-sm-3">Vehicle Number</label>
-                <input type="text" class="col-sm-7" formControlName="vehicleNumber"/>
-          </div>
-            </form>
 
-          
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" (click)="keyService()">Send</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-  
     </div>
-  </div>
-                
+
+    <!-- Modal keyServiceModel-->
+    <div id="keyServiceModel" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Key Service</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form [formGroup]="keyForm" #f>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3">Full Name</label>
+                            <input type="text" id="name" class="col-sm-7" formControlName="fullName" required>
+                            <span style="color:red" *ngIf="!keyForm.controls.fullName.valid && keyForm.controls.fullName.touched">Please enter Name</span>
+
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3">Contact Number</label>
+                            <input type="text" id="contactNumber" class="col-sm-7" maxlength="10" minlength=10 maxlength=10 formControlName="contactNumber" required/>
+                            <span style="color:red" *ngIf="!keyForm.controls.contactNumber.valid && keyForm.controls.contactNumber.touched">Please enter contact number</span>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">City</label>
+                            <input type="text" id="city" class="col-sm-7" formControlName="city" required/>
+                            <span style="color:red" *ngIf="!keyForm.controls.city.valid && keyForm.controls.city.touched">Please enter city</span>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">zipCode</label>
+                            <input type="text" id="zipCode" class="col-sm-7" formControlName="zipCode" required/>
+                            <span style="color:red" *ngIf="!keyForm.controls.zipCode.valid && keyForm.controls.zipCode.touched">Please enter zipCode</span>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">Vehicle Type</label>
+                            <input type="text" id="vehicleType" class="col-sm-7" formControlName="vehicleType" required/>
+                            <span style="color:red" *ngIf="!keyForm.controls.vehicleType.valid && keyForm.controls.vehicleType.touched">Please enter Vehicle Type</span>
+
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-3">Vehicle Number</label>
+                            <input type="text" id="vehicleNumber" class="col-sm-7" formControlName="vehicleNumber" required/>
+                            <span style="color:red" *ngIf="!keyForm.controls.vehicleNumber.valid && keyForm.controls.vehicleNumber.touched">Please enter Vehicle Number</span>
+
+
+                        </div>
+
+
+                        <button type="button" [disabled]="!keyForm.valid" id="vehicleNumber" class="btn btn-default" (click)="keyService(keyForm)">Send</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </form>
+
+
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-default" (click)="keyService()">Send</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
 
 </div>
-
